@@ -74,7 +74,7 @@ h6,
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: #1e4356;
+  background: #22aaff;
 }
 
 #header.header-transparent {
@@ -82,7 +82,7 @@ h6,
 }
 
 #header.header-scrolled {
-  background: rgba(30, 67, 86, 0.8);
+  background: #00aaff;
   height: 60px;
 }
 
@@ -282,7 +282,7 @@ h6,
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #1e4356;
+  color: #22aaff;
 }
 
 .navbar-mobile a:hover,
@@ -347,7 +347,7 @@ h6,
   top: 0;
   width: 130%;
   height: 95%;
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
+  background: linear-gradient(to right, #00aaff, rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
   z-index: 0;
   border-radius: 0 0 50% 50%;
   transform: translateX(-50%) rotate(0deg);
@@ -501,7 +501,7 @@ h6,
   top: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
+  background: linear-gradient(to right, #00aaff, rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
 }
 
 #hero-no-slider h2 {
@@ -1134,7 +1134,7 @@ section {
 }
 
 .service-details .card-title a {
-  color: #1e4356;
+  color: #22aaff;
   transition: 0.3s;
 }
 
@@ -1232,7 +1232,7 @@ section {
 }
 
 .pricing .get-started-btn {
-  background: #1e4356;
+  background: #22aaff;
   display: inline-block;
   padding: 6px 30px;
   border-radius: 20px;
@@ -1317,7 +1317,7 @@ section {
 }
 
 .portfolio .portfolio-item {
-  background: #1e4356;
+  background: #22aaff;
   overflow: hidden;
   min-height: 200px;
   position: relative;
@@ -1457,7 +1457,7 @@ section {
   opacity: 0;
   transition: bottom ease-in-out 0.4s;
   text-align: center;
-  background: rgba(30, 67, 86, 0.8);
+  background: #00aaff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1690,7 +1690,7 @@ section {
 }
 
 .blog .entry .entry-title a {
-  color: #1e4356;
+  color: #22aaff;
   transition: 0.3s;
 }
 
@@ -1782,7 +1782,7 @@ section {
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: #1e4356;
+  background-color: #22aaff;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -1862,7 +1862,7 @@ section {
   font-size: 22px;
   margin-bottom: 0px;
   padding: 0;
-  color: #1e4356;
+  color: #22aaff;
 }
 
 .blog .blog-author .social-links {
@@ -1917,7 +1917,7 @@ section {
 
 .blog .blog-comments .comment h5 .reply {
   padding-left: 10px;
-  color: #1e4356;
+  color: #22aaff;
 }
 
 .blog .blog-comments .comment h5 .reply i {
@@ -1980,7 +1980,7 @@ section {
   border-radius: 4px;
   padding: 10px 20px;
   border: 0;
-  background-color: #1e4356;
+  background-color: #22aaff;
 }
 
 .blog .blog-comments .reply-form .btn-primary:hover {
@@ -2004,7 +2004,7 @@ section {
 }
 
 .blog .blog-pagination li a {
-  color: #1e4356;
+  color: #22aaff;
   padding: 7px 16px;
   display: flex;
   align-items: center;
@@ -2032,7 +2032,7 @@ section {
   font-weight: 700;
   padding: 0 0 0 0;
   margin: 0 0 15px 0;
-  color: #1e4356;
+  color: #22aaff;
   position: relative;
 }
 
@@ -2089,7 +2089,7 @@ section {
 }
 
 .blog .sidebar .categories ul a {
-  color: #1e4356;
+  color: #22aaff;
   transition: 0.3s;
 }
 
@@ -2119,7 +2119,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a {
-  color: #1e4356;
+  color: #22aaff;
   transition: 0.3s;
 }
 
@@ -2174,7 +2174,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #0b212d;
+  background: #22aaff;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -2182,7 +2182,7 @@ section {
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #0d2735;
+  background: #00aaff;
 }
 
 #footer .footer-newsletter h4 {
@@ -2229,7 +2229,7 @@ section {
 }
 
 #footer .footer-top {
-  background: #0d2735;
+  background: #00aaff;
   border-top: 1px solid #17455e;
   border-bottom: 1px solid #123649;
   padding: 60px 0 30px 0;
@@ -2259,7 +2259,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #1e4356;
+  background: #22aaff;
   color: #fff;
   line-height: 1;
   padding: 8px 0;

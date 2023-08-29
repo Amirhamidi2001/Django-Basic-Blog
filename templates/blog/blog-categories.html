@@ -1,0 +1,9 @@
+{% load static %}
+<h3 class="sidebar-title">Categories</h3>
+<div class="sidebar-item categories">
+  {% for name, count in categories.items %}
+  <ul>
+    <li><a href="{% url 'blog:category' cat_name=name %}">{{name}} <span>({{count}})</span></a></li>
+  </ul>
+  {% endfor %}
+</div><!-- End sidebar categories-->

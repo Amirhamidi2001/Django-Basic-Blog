@@ -49,9 +49,9 @@
                     <a href="{% url 'blog:category' cat_name=cat.name %}">{{cat.name}}</a>{% if not forloop.last %} ,{% endif %}
                   {% endfor %}
                   </li>
-                  <li class="d-flex align-items-center"><i class="bi bi-calendar2"></i> <a href="#"><time datetime="2020-01-01">{{post.published_date|date:"M d Y"}}</time></a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-eye"></i> <a href="#">{{post.counted_views}}</a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">12 Comments</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-calendar2"></i> <a><time datetime="2020-01-01">{{post.published_date|date:"M d Y"}}</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-eye"></i> <a>{{post.counted_views}}</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a>{{post.comments.count}} Comments</a></li>
                 </ul>
               </div>
 

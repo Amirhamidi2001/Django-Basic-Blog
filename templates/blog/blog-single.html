@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load humanize %}
 {% load blog_tags %}
 {% block content %}
 
@@ -48,7 +49,7 @@
                       <a href="{% url 'blog:category' cat_name=cat.name %}">{{cat.name}}</a>{% if not forloop.last %} ,{% endif %}
                     {% endfor %}
                   </li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2020-01-01">{{post.published_date|date:"F d Y"}}</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2020-01-01">{{post.published_date|naturalday}}</time></a></li>
                   <li class="d-flex align-items-center"><i class="bi bi-eye"></i> <a href="#">{{post.counted_views}}</a></li>
                   <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">{{comments.count}} Comments</a></li>
                 </ul>
@@ -109,7 +110,7 @@
                   <div class="comment-img"><i class="bi bi-person-fill"></i></div>
                   <div>
                     <h5>{{ comment.name }}</h5>
-                    <time datetime="2020-01-01">{{ comment.created_date }}</time>
+                    <time datetime="2020-01-01">{{ comment.created_date|naturaltime }}</time>
                     <p>
                       {{ comment.message }}
                     </p>

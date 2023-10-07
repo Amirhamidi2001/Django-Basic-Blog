@@ -5,8 +5,8 @@ from django.contrib import messages
 from .models import Category, Post, Comment
 from .forms import CommentForm
 
+
 def blog_views(request, **kwargs):
-    
     posts = Post.objects.filter(status=1)
     if kwargs.get("cat_name") != None:
         posts = posts.filter(category__name=kwargs["cat_name"])
@@ -20,17 +20,18 @@ def blog_views(request, **kwargs):
         posts = posts.get_page(1)
     except EmptyPage:
         posts = posts.get_page(1)
-    context = {"posts":posts}
+    context = {"posts": posts}
     return render(request, "blog/blog.html", context)
 
 
 def single_views(request, pid):
-
-    if request.method == 'POST':
+    if request.method == "POST":
         form = CommentForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.add_message(request, messages.SUCCESS, "your comment submited successfully")
+            messages.add_message(
+                request, messages.SUCCESS, "your comment submited successfully"
+            )
         else:
             messages.add_message(request, messages.ERROR, "your comment didnt submiter")
 
@@ -40,15 +41,14 @@ def single_views(request, pid):
     post.save()
     comments = Comment.objects.filter(post=post.id, approved=True)
     form = CommentForm
-    context = {"post":post, "comments":comments, "form":form}
+    context = {"post": post, "comments": comments, "form": form}
     return render(request, "blog/blog-single.html", context)
 
 
 def blog_search(request, **kwargs):
-    
     posts = Post.objects.filter(status=1)
     if request.method == "GET":
         if s := request.GET.get("s"):
             posts = posts.filter(content__contains=s)
-    context = {"posts":posts}
+    context = {"posts": posts}
     return render(request, "blog/blog.html", context)

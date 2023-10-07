@@ -28,17 +28,17 @@ sitemaps = {
 }
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('accounts/', include('accounts.urls')),
-    path('blog/', include('blog.urls')),
-    path('', include('website.urls')),
+    path("admin/", admin.site.urls),
+    path("accounts/", include("accounts.urls")),
+    path("blog/", include("blog.urls")),
+    path("", include("website.urls")),
     path(
         "sitemap.xml",
         sitemap,
         {"sitemaps": sitemaps},
         name="django.contrib.sitemaps.views.sitemap",
     ),
-    path('robots.txt', include('robots.urls')),
+    path("robots.txt", include("robots.urls")),
     path("__debug__/", include("debug_toolbar.urls")),
 ]
 

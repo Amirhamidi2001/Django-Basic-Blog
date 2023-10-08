@@ -43,11 +43,6 @@ def team_views(request):
 
 
 def newsletter_views(request):
-    """
-    The newsletter_views function also handles both GET and POST requests.
-    If the request method is POST, it creates a NewsletterForm object with the POST data and checks if it is valid.
-    """
-
     if request.method == "POST":
         form = NewsletterForm(request.POST)
         if form.is_valid():
@@ -56,3 +51,7 @@ def newsletter_views(request):
             return HttpResponseRedirect("/")
     else:
         return HttpResponseRedirect("/")
+
+
+def custom_404(request, exception):
+    return render(request, "website/404.html", status=404)
